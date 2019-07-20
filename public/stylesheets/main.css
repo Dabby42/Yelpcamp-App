@@ -1,0 +1,25 @@
+body {
+  height: 2000px;
+  padding-top: 70px;
+}
+
+.img-thumbnail img{
+  width: 100%;
+}
+
+.img-thumbnail{
+  padding: 0;
+}
+
+.img-thumbnail .caption{
+  padding: 9px;
+}
+
+.jumbotron h1{
+  font-weight: 600;
+  font-size: 4em;
+}
+
+#delete-form{
+  display: inline;
+}
