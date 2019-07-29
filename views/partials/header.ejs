@@ -1,4 +1,82 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YelpCamp &mdash; Website by D M. Nwafor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/css/jquery-ui.css">
+    <link rel="stylesheet" href="/lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/lib/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="/lib/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/lib/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="/lib/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="/lib/css/aos.css">
+
+    <link rel="stylesheet" href="/lib/css/style.css">
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto w-25"><a href="/campgrounds">YelpCamp</a></div>
+
+          <div class="mx-auto text-center">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                  <% if (!currentUser){ %>
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/campgrounds" class="nav-link">Gallery</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="/login" class="nav-link">Log In</a></li>
+                  <% } else { %>
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Signed in As <%= currentUser.username %></a></li>
+                    <li><a href="/campgrounds" class="nav-link">Gallery</a></li>
+                    <li><a href="/logout" class="nav-link">Log Out</a></li>
+                  <% } %>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="ml-auto w-25">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -36,16 +114,4 @@
           <% } %>
          </ul>
       </div>
-    </nav>
-    <div class="container">
-      <% if (error && error.length > 0){%>
-      <div class="alert alert-danger" role="alert">
-        <%=error %> 
-      </div>
-      <%}%>
-      <% if (success && success.length > 0){%>
-      <div class="alert alert-success" role="alert">
-        <%=success %>
-      </div>
-      <%}%>
-    </div>
+    </nav> -->

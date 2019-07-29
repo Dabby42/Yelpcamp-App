@@ -1,7 +1,352 @@
 <% include partials/header %>
-<h1>Landing Page!</h1>
+<!-- <h1>Landing Page!</h1>
 
 <p>Welcome to YelpCamp</p>
 
 <a href="/campgrounds">View All Campgrounds</a>
+ -->
+
+
+    <div class="intro-section" id="home-section">
+
+      <div class="slide-1" style="background-image: url('/lib/images/hero_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                  <h1  data-aos="fade-up" data-aos-delay="100">Welcome To YelpCamp!</h1>
+                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">Explore our hand-picked campgrounds from all over the world</p>
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="/campgrounds" class="btn btn-primary py-3 px-5 btn-pill">View All Campgrounds</a></p>
+                </div>
+
+                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
+                  <form action="/register" method="POST" class="form-box">
+                    <h3 class="h4 text-black mb-4">Sign Up</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="email" placeholder="Email Addresss">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group mb-4">
+                      <input type="password" class="form-control" name="re-password" placeholder="Re-type Password">
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary btn-pill" value="Sign up">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section courses-title" id="courses-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
+            <h2 class="section-title">Campgrounds</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section courses-entry-wrap"  data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel col-12 nonloop-block-14">
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <img src="/lib/images/img_1.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$20</span>
+                <div class="meta"><span class="icon-clock-o"></span>3 months / 12 weeks</div>
+                <h3>Mountain Goat's Rest</h3>
+                <p>Cool and flambouyant at the same time, a must visit for those who love camping </p>
+              </div>
+            </div>
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <img src="/lib/images/img_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$99</span>
+                <div class="meta"><span class="icon-clock-o"></span>6 months / 24 weeks</div>
+                <h3>Siren Sleeks</h3>
+                <p>Sunny and Rocky at the same time, a must visit for those who love the hills  </p>
+              </div>
+            </div>
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <a href="course-single.html"><img src="/lib/images/img_3.jpg" alt="Image" class="img-fluid"></a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$99</span>
+                <div class="meta"><span class="icon-clock-o"></span>3 months / 12 weeks</div>
+                <h3>Dersty Desert</h3>
+                <p>Exquisite and Unique at the same time, a must visit for those who love camping  </p>
+              </div>
+            </div>
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <a href="course-single.html"><img src="/lib/images/img_4.jpg" alt="Image" class="img-fluid"></a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$20</span>
+                <div class="meta"><span class="icon-clock-o"></span>1 year / 48 weeks</div>
+                <h3>Dabby's Hideout</h3>
+                <p>Cool and Glamorous at the same time, a must visit for those who love camping  </p>
+              </div>
+            </div>
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <a href="course-single.html"><img src="/lib/images/img_5.jpg" alt="Image" class="img-fluid"></a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$99</span>
+                <div class="meta"><span class="icon-clock-o"></span>3 months / 12 weeks</div>
+                <h3>Siren Sleeks</h3>
+                <p>Cool and flambouyant at the same time, a must visit for those who love camping  </p>
+              </div>
+            </div>
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                <a href="course-single.html"><img src="/lib/images/img_6.jpg" alt="Image" class="img-fluid"></a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$99</span>
+                <div class="meta"><span class="icon-clock-o"></span>3 months / 12 weeks</div>
+                <h3>Mountain Goat's Rest</h3>
+                <p>Cool and flambouyant at the same time, a must visit for those who love camping </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-7 text-center">
+            <button class="customPrevBtn btn btn-primary m-1">Prev</button>
+            <button class="customNextBtn btn btn-primary m-1">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="programs-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 text-center"  data-aos="fade-up" data-aos-delay="">
+            <h2 class="section-title">Our Programs</h2>
+            <p>We offer free campground reviews to you our most esteemed campers which we believe will enable you make the right choice for that next camping journey attached to this, is a free assistance we offer to dedicated campers to aid routing!.</p>
+          </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <img src="/lib/images/undraw_youtube_tutorial.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="text-black mb-4">We Are Excellent In Campgrounds</h2>
+            <p class="mb-4">Get the best reviews of campgrounds with us here at YelpCamp, your experience will give the story</p>
+            <div class="d-flex align-items-center custom-icon-wrap mb-3">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
+              <div><h3 class="m-0">22,931 Campers Yearly</h3></div>
+            </div>
+            <div class="d-flex align-items-center custom-icon-wrap">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
+              <div><h3 class="m-0">150 Recommendations Worldwide</h3></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="/lib/images/undraw_teaching.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="text-black mb-4">Strive for the best</h2>
+            <p class="mb-4">Come let's put you through the art of Camping, we promise it will be an exciting one you will never forget.</p>
+            <div class="d-flex align-items-center custom-icon-wrap mb-3">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
+              <div><h3 class="m-0">22,931 Campers Yearly</h3></div>
+            </div>
+            <div class="d-flex align-items-center custom-icon-wrap">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
+              <div><h3 class="m-0">150 Recommendations Worldwide</h3></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <img src="lib/images/undraw_teacher.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="text-black mb-4">Tourism is life</h2>
+            <p class="mb-4">Our 24/7 online assistant is ready to unleash to you exciting and affordable camp all over the world.</p>
+            <div class="d-flex align-items-center custom-icon-wrap mb-3">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
+              <div><h3 class="m-0">22,931 Campers Yearly</h3></div>
+            </div>
+            <div class="d-flex align-items-center custom-icon-wrap">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
+              <div><h3 class="m-0">150 Recommendations Worldwide</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="campers-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
+            <h2 class="section-title">Our Campers</h2>
+            <p class="mb-5">Camping is a leisure activity, usually during summer when school children are on holiday, where people leave their homes and spend one or more nights outdoors. Below are some of what our Campers are saying!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="teacher text-center">
+              <img src="lib/images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+                <h3 class="text-black">Benjamin Stone</h3>
+                <p class="position">Physics Teacher</p>
+                <p>During the holidays the students and i enjoyed ourselves at the siren sleeks, all thanks to YelpCamp.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="teacher text-center">
+              <img src="lib/images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+                <h3 class="text-black">Katleen Stone</h3>
+                <p class="position">Web Developer</p>
+                <p>This web app is superb, it has helped me in validating reviews concerning campgrounds.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="teacher text-center">
+              <img src="lib/images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <div class="py-2">
+                <h3 class="text-black">Sadie White</h3>
+                <p class="position">Sailor</p>
+                <p>YelpCamp has been an added advantage to my houshold and my Profession.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-image overlay" style="background-image: url('/lib/images/hero_1.jpg');">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8 text-center testimony">
+            <img src="/lib/images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+            <h3 class="mb-4">D M. Nwafor</h3>
+            <blockquote>
+              <p>&ldquo; I have developed an hobby for developing web applications since my undergraduate days and with this embarked on few projects. YelpCamp was my bootcamp project and i think i have done justice to bringing it to production    &rdquo;</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section pb-0">
+      <div class="future-blobs">
+        <div class="blob_2">
+          <img src="/lib/images/blob_2.svg" alt="Image">
+        </div>
+        <div class="blob_1">
+          <img src="/lib/images/blob_1.svg" alt="Image">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mb-5 justify-content-center" data-aos="fade-up" data-aos-delay="">
+          <div class="col-lg-7 text-center">
+            <h2 class="section-title">Why Choose Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto align-self-start"  data-aos="fade-up" data-aos-delay="100">
+            <div class="p-4 rounded bg-white why-choose-us-box">
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-graduation-cap"></span></span></div>
+                <div><h3 class="m-0">22,931 Campers Yearly</h3></div>
+              </div>
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span></div>
+                <div><h3 class="m-0">150 Recommendations Worldwide</h3></div>
+              </div>
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-graduation-cap"></span></span></div>
+                <div><h3 class="m-0">Top Campgrounds in The World</h3></div>
+              </div>
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span></div>
+                <div><h3 class="m-0">Expand Your Knowledge</h3></div>
+              </div>
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-graduation-cap"></span></span></div>
+                <div><h3 class="m-0">Best Online Assisants</h3></div>
+              </div>
+              <div class="d-flex align-items-center custom-icon-wrap custom-icon-light">
+                <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span></div>
+                <div><h3 class="m-0">Best Campers</h3></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 align-self-end"  data-aos="fade-left" data-aos-delay="200">
+            <img src="/lib/images/person_transparent.png" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h2 class="section-title mb-3">Message Us</h2>
+            <p class="mb-5">Please feel free to drop us your message here using the below platform</p>
+
+            <form method="post" data-aos="fade">
+              <div class="form-group row">
+                <div class="col-md-6 mb-3 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <% include partials/footer %>

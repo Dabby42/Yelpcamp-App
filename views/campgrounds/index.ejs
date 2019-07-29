@@ -1,14 +1,46 @@
 <% include ../partials/header%>
 
-<div class="container">
-  <header class="jumbotron">
-    <h1>Welcome to YelpCamp!</h1>
+  <!-- <header class="jumbotron">
+    <h1></h1>
     <h5>View our hand-picked campgrounds from all over the world</h5>
     <p>
       <a class="btn btn-primary btn-large" href="/campgrounds/new">Add new Campgrounds</a>
     </p>
-  </header>
+  </header> -->
+  <div class="intro-section single-cover" id="home-section">
+    <div class="slide-1 " style="background-image: url('/lib/images/img_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="row justify-content-center align-items-center text-center">
+              <div class="col-lg-6">
+                <h1 data-aos="fade-up" data-aos-delay="0">View our hand-picked campgrounds from all over the world</h1>
 
+                <div class="container">
+                  <% if (error && error.length > 0){%>
+                  <div class="alert alert-danger" role="alert">
+                    <%=error %>
+                  </div>
+                  <%}%>
+                  <% if (success && success.length > 0){%>
+                  <div class="alert alert-success" role="alert">
+                    <%=success %>
+                  </div>
+                  <%}%>
+                </div>
+
+                <p data-aos="fade-up" data-aos-delay="100">
+                  <a class="btn btn-primary btn-large text-white" href="/campgrounds/new">Add new Campgrounds</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container" style="margin-top: 5%";>
   <div class="row text-center" style="display:flex; flex-wrap:wrap;">
     <% campgrounds.forEach(function (campgrounds) { %>
     <div class="col-md-4 col-sm-6">
