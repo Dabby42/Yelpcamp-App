@@ -1,7 +1,6 @@
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
-    port        = 3000 || "process.env.PORT",
     passport    = require("passport"),
     flash       = require("connect-flash"),
     passportLocalMongoose = require("passport-local-mongoose"),
@@ -50,6 +49,6 @@ app.use(indexRoutes);
 app.use("/campgrounds",campgroundRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 
-app.listen(port, process.env.IP, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
   console.log("The YelpCamp Server is listening!");
 })
